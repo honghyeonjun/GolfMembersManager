@@ -6,6 +6,8 @@
 #include "CardReader.h"
 #include "Controller.h"
 #include "Monitor.h"
+#include "ManageButton.h"
+
 #pragma once
 
 class Listener
@@ -18,6 +20,7 @@ public:
 
 private:
     CardReader *rfid;
+    ManageButton *modeButton;
     Controller *controller;
     uint8_t rfidData[16];
     

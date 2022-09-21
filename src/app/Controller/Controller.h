@@ -3,6 +3,7 @@
 
 #include "Monitor.h"
 #include "DeviceData.h"
+#include "MembersManageService.h"
 #pragma once
 
 class Controller
@@ -14,6 +15,7 @@ public:
 
 private:
     Monitor *monitor;
+    MembersManageService *membersManageService;
 
 };
 

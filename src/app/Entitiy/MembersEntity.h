@@ -4,7 +4,7 @@
 #include <vector>
 #include <iostream>
 #include "MemberInfo.h"
-
+#include <string>
 #pragma once
 
 
@@ -17,7 +17,14 @@ public:
     // void addmemberInfo(MemberInfo member);
     // void addmemberInfo(MemberInfo member);
     // void makeDBMembersInfo();
-    void printMemberInfo();
+    void printMemberInfo(int index);
+    void printMemberInfo(std::string name);
+    void printMemberInfo(int *cardNum);
+    void addMemberInfo(MemberInfo member);
+    void memoryToDB();
+    bool delMemberInfo(int *cardNum);
+    bool findMemberInfo(std::string name);
+    bool findMemberInfo(int *cardNum);
 
 private:
     std::vector<MemberInfo> vecMembersList;
